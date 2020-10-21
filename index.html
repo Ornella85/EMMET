@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMMET - visual Studio Code</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+    <body>
+        <!-- header>h1{coder aevc emmet} -->
+        <header>
+            <h1>Coder avec EMMET</h1>
+        </header>
+
+        <nav>
+            <a href="#html">HTML</a>
+            <a href="#CSS">CSS</a>
+        </nav>
+
+        <h2 id="html">HTML</h2>
+
+
+        <!-- div>h3+code*2+p -->
+        <div>
+            <h3>Ajouter un élément enfant : ">"</h3>
+            <code>li>p</code>
+            <br>
+            <code>ul>li>p</code>
+            <p>Résultat :</p>
+        </div>
+        <center>
+            <img src="img/em1.png" alt="ici le texte contenu par l'image">
+        </center>
+
+
+        <!-- (div>h3+code+p{Résultat :})+center>img -->
+        <div>
+            <h3>Ajouter un frère : "+"</h3>
+            <code>ul>li>p+a</code>
+            <p>Résultat :</p>
+        </div>
+        <center>
+            <img src="img/em2.png" alt="">
+        </center>
+
+        <div>
+            <h3>Ajouter une classe avec : "."</h3>
+            <code>ul.wrapper</code>
+            <br>
+            <code>.container</code>
+            <p>Résultat :</p>
+        </div>
+        <center>
+            <img src="img/em4.png" alt="">
+        </center>
+
+        <div>
+            <h3>Multiplier un élément avec : "*"</h3>
+            <code>ul>li*3>p+img</code>
+            <p>Résultat :</p>
+        </div>
+        <center>
+            <img src="img/em3.png" alt="">
+        </center>
+
+        <div>
+            <h3>Grouper des éléments multiples : "()"</h3>
+            <code>ul>(header>ul>li*2>a)+footer>p</code>
+            <code>ul>(li>p+img+a)+li*2>p+img</code>
+            <p>Résultat :</p>
+        </div>
+        <center>
+            <img src="img/em5.png" alt="">
+        </center>
+
+        <!-- (div>h3+code+br+code+p{Résultat :})+center>img -->
+        <div>
+            <h3>Insérer du text dans un élément : " { } "</h3>
+            <code>a{click me}</code>
+            <br>
+            <code>p>{click }+a{here}+{ to continue}</code>
+            <p>Résultat :</p>
+        </div>
+        <center>
+            <img src="img/em6.png" alt="">
+        </center>
+
+        <div>
+            <h3>Ajouter une numérotation : "$"</h3>
+            <code>ul>li.item$*5</code>
+            <p>Résultat :</p>
+        </div>
+        <center>
+            <img src="img/em7.png" alt="">
+        </center>
+
+        <div>
+            <h3>Commencer la numérotation au chiffre voulu : " $@X "</h3> <!-- X étant le nombre voulu -->
+            <code>ul>li.item$@3*5</code>
+            <p>Résultat :</p>
+        </div>
+        <center>
+            <img src="img/em8.png" alt="">
+        </center>
+        
+        <div>
+            <h3>Numéroter dans l'ordre décroissant : " $@- "</h3>
+            <code>ul>li.item$@-{pizza $@-}*5</code>
+            <p>Résultat :</p>
+        </div>
+        <center>
+            <img src="img/em9.png" alt="">
+        </center>
+      
+        <div>
+            <h3>remonter d'un élément enfant : " ^ "</h3>
+            <code>div>p>em{Hello]^a</code>
+            <p>Résultat :</p>
+        </div>
+        <center>
+            <img src="img/em10.png" alt="">
+        </center>
+
+        <div>
+            <h3>Ajouter un attribut : " [attr_name="valeur"] "</h3>
+            <code>img[scr="http://placecage.com/300/300" alt="nicCage"]</code>
+            <p>Résultat :</p>
+        </div>
+        <center>
+            <img src="img/em11.png" alt=""></img>
+        </center>
+
+        <div>
+            <h3>En bref</h3>
+            <code>
+                div.list>ul>(li.item$>p{paragraph $}+img[src="http://placecage.com/300/300"])+li.item$@2*4>p{paragraph $@2>p}+img[src="http://placesheen.com/$@1$$/$@5$$"]+a^^^footer>={place cage vs placesheen}
+            </code>
+            <p>Résultat :</p>
+        </div>
+        <center>
+            <img src="img/em12.png" alt="">
+        </center>
+       
+         <!-- div>p*3^h2+div>p^center>img -->
+         <div>
+             <p>
+                 Le premier regroupement contient un &lt;li> qui a deux enfants : &lt;p> qui contiennent du texte et une &lt;img> qui a un attribut scr.
+             </p>
+
+             <p>
+                 Le groupement suivant contient les &lt;li> 2 à 5  en multipliant des listes dont les noms de class, contenu de paragraphes et valeurs d'attributs s'inscrémentent (augmentent) selon des syntaxes différentes. Chaque &lt;li> contient une ancre invariable.
+
+             </p>
+
+             <p>
+                 Enfin les 3 ^^^ permettent de remonter les éléments parents pour placer le &lt;footer> au même niveau que &lt;div>, (sortir de &lt;li> puis &lt;ul> puis de la &lt;div> pour donner à cette dernière un &lt;footer> "frère").
+             </p>
+         </div>
+
+         <h2 id="CSS">CSS</h2>
+         <div>
+             <p>Quelques raccourcis courants : </p>
+         </div>
+         <center>
+             <img src="img/em13.png" alt="">
+        </center>
+
+    </body>
+ </html>

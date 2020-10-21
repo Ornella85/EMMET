@@ -1,0 +1,59 @@
+body{
+    font-family: 'open sans', sans-serif; /* choisis open sans comme police et si il ne trouve pas utilise sans serif */
+    background-image: url(../img/bkg.jpg);
+    background-repeat: repeat;
+}
+
+section{
+    width: 60%;
+    margin: 0 auto;
+}
+
+h1{
+    text-align: center;
+    background: #000;
+    color: white;
+    padding: 1vw ; /* *vw largeur de l'écran*/;
+}
+
+nav{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+nav a{
+    font-size: 1.3em;
+    font-weight: 700;
+    padding: 1em 2em;
+    color: olivedrab;
+}
+
+h2{
+    font-size: 1.5em;
+    text-align: center;
+    background: #000;
+    color: white;
+}
+
+code{
+    font-size: 1.5vw;
+    font-style: italic;
+    background-color: lightgray;
+}
+
+div{
+    text-align: center;
+    background: #fff;
+    color: black;
+    padding: 1vw;
+}
+
+img{
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+
+div p:last-child{
+    text-decoration: underline;
+}
